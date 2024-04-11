@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+    color: white;
+    user-select: none;
+}
+
+.search{
+    width: 210px;
+    padding: 6px 7px;
+    border: 1px solid #000000;
+    border-radius: 8px;
+    color: black;
+}
+
+.searchBlock{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px auto;
+    width: fit-content;
+}
+
+.container{
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    margin: 0 auto;
+}
+
+.cell{
+    cursor: move;
+}
+
+.city{
+    width: 550px;
+    height: 300px;
+    background-color: #b7ada5;
+    border-radius: 25px;
+    padding: 20px 25px;
+    background-size: cover;
+    /*pointer-events: none;*/
+}
+
+.filter{
+    position: relative;
+    backdrop-filter: blur(2px);
+    width: 550px;
+    height: 300px;
+    border-radius: 25px;
+    bottom: 20px;
+    right: 25px;
+    background-color: rgba(54, 54, 54, 0.37);
+    /*pointer-events: none;*/
+}
+
+.info{
+    width: 550px;
+    height: 300px;
+    border-radius: 25px;
+    padding: 20px 25px;
+    position: relative;
+    z-index: 5;
+    bottom: 355px;
+    right: 25px;
+
+}
+
+.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.weather{
+    font-size: 14pt;
+}
+
+.cityName{
+    font-size: 16pt;
+}
+
+.top div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.weather::first-letter{
+    text-transform: capitalize;
+}
+
+.searchBtn{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 22px;
+    aspect-ratio: 1/1;
+    right: 36px;
+    border-radius: 50%;
+}
+
+.searchBtn:hover{
+    background-color: #c0c0c0;
+    cursor: pointer;
+}
+
+.center{
+    display: flex;
+
+    align-items: baseline;
+    gap: 10px;
+}
+
+.temp{
+    font-size: 50pt;
+
+}
+
+.feelsLike{
+    font-size: 14pt;
+}
+
+.time{
+    text-align: end;
+    font-size: 14pt;
+    display: block;
+}
+
+.degWind{
+    position: relative;
+    left: 30px;
+    bottom: 68px;
+}
+
+.bottom{
+    margin-top: 5px;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.compass, .humidity, .wind{
+    width: 100px;
+}
+
+.humidity, .wind{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.percents, .speed{
+    font-size: 24pt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 76px;
+    height: 78px;
+}
+
+.compass{
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+}
+.compass p{
+    text-align: center;
+}
+.compass div{
+    width: 76px;
+    height: 78px;
+}
+
+svg{
+    fill: white;
+}
+
+.btnDelete{
+    width: 30px;
+    aspect-ratio: 1/1;
+    position: relative;
+    right: 35px;
+    bottom: 330px;
+    cursor: pointer;
+    pointer-events: auto;
+    z-index: 5;
+}
+
+.dragging{
+    opacity: 0.01;
+}
+
+
